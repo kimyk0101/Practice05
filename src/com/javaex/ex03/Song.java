@@ -1,8 +1,7 @@
 package com.javaex.ex03;
-//	예상 : Song(파라미터0개)
-//		 Song(파라미터5개)좋은날, 아이유, Real, 이민수, 2010
-//		 Song(파라미터6개)좋은날, 아이유, Real, 이민수, 2010, 3
+
 public class Song {
+	//	필드
 	private String title;
 	private String artist;
 	private String album;
@@ -10,12 +9,14 @@ public class Song {
 	private String year;
 	private int track;
 	
+	//	기본 생성자?
 	public Song() {
 		System.out.println("Song(파라미터0개)");
 	}
 	
+	//	생성자 초기화?
 	public Song(String title, String artist, String album, String composer, String year) {
-		this.title = title;
+		this.title = title;	//	
 		this.artist = artist;
 		this.album = album;
 		this.composer = composer;

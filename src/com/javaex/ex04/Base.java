@@ -3,7 +3,7 @@ package com.javaex.ex04;
 public class Base {
     	
     public void service(String state) {
-    	System.out.println(state);
+    	
         //코드작성할것
     }
 
