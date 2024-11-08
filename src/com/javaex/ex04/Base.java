@@ -3,8 +3,16 @@ package com.javaex.ex04;
 public class Base {
     	
     public void service(String state) {
-    	
-        //코드작성할것
+    	if(state == "낮") {
+    		day();
+    	}
+    	if(state == "밤") {
+    		night();
+    	}
+    	if(state == "오후") {
+    		afternoon();
+    	}
+    	//코드작성할것
     }
 
     public void day() {
