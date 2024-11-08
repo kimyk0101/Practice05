@@ -10,7 +10,7 @@ public class Base {
     		night();
     	}
     	if(state == "오후") {
-    		afternoon();
+    		this.afternoon();
     	}
     	//코드작성할것
     }
