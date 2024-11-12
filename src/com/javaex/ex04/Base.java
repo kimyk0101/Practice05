@@ -5,12 +5,10 @@ public class Base {
     public void service(String state) {
     	if(state == "낮") {
     		day();
-    	}
-    	if(state == "밤") {
+    	} else if(state == "밤") {
     		night();
-    	}
-    	if(state == "오후") {
-    		this.afternoon();
+    	} else {
+    		afternoon();
     	}
     	//코드작성할것
     }
