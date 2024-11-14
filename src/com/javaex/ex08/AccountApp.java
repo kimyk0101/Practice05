@@ -10,7 +10,8 @@ public class AccountApp {
         boolean run = true;
         int money;
         
-        Account account = new Account("312-89562-123456");
+        Account account = new Account("312-89562-123456", 0);
+        account.showInfo();
         
         while(run){
             System.out.println("");
