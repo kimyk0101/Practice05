@@ -1,5 +1,6 @@
 package com.javaex.ex10;
 
+
 import java.util.Scanner;
 
 public class BookShop {
@@ -19,6 +20,7 @@ public class BookShop {
         books[9] = new Book(10, "풀하우스", "원수연");
 
         System.out.println("*****도서 정보 출력하기******");
+      
         displayBookInfo(books);
         
         Scanner scanner = new Scanner(System.in);
@@ -28,6 +30,13 @@ public class BookShop {
 
         // (1) 입력된 번호에 맞는 책을 찾아 대여 되었음(상태코드=0)을 체크 합니다.
         // 코드작성
+        for (int i = 0; i < books.length; ++i) {
+        	if(num == i+1) {
+        		Book.rent();
+        		Book.print();
+        	}
+        }
+        
         
         
 
@@ -41,5 +50,9 @@ public class BookShop {
     private static void displayBookInfo(Book[] books) {
         
     	//코드작성
+    	for (int j = 0; j < books.length; ++j) {
+    		System.out.println(books);
+    	}
+    	 
     }
 }
